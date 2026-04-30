@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Fragrance Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Fragrance<span>Haven</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li class="active"><a href="payment.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Checkout</h1>
+            <p>Complete your purchase of premium fragrances</p>
+        </div>
+    </section>
+
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-grid">
+                <div class="order-summary">
+                    <h2>Your Order</h2>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <img src="https://eternalfragrance.com/cdn/shop/files/Eternal-Fragrance-Bliss-100ml-EDP.jpg?v=1738609422&width=480" alt="">
+                            <div class="item-details">
+                                <h3>Eternal Bliss</h3>
+                                <p>Chanel</p>
+                                <div class="item-price">
+                                    <span>R1 699.60</span>
+                                    <div class="quantity">
+                                        <button class="quantity-btn minus">-</button>
+                                        <span>1</span>
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <img src="https://m.media-amazon.com/images/I/51v6twuJeuL.jpg" alt="">
+                            <div class="item-details">
+                                <h3>Silver Woods</h3>
+                                <p>Creed</p>
+                                <div class="item-price">
+                                    <span>R2 463.60</span>
+                                    <div class="quantity">
+                                        <button class="quantity-btn minus">-</button>
+                                        <span>1</span>
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-totals">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span>R4 163.20</span>
+                        </div>
+                        <div class="shipping">
+                            <span>Shipping:</span>
+                            <span>FREE</span>
+                        </div>
+                        <div class="tax">
+                            <span>Tax:</span>
+                            <span>R100.00</span>
+                        </div>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span>R4263.20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <h2>Payment Information</h2>
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <div class="card-input">
+                                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Billing Address</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code</label>
+                                <input type="text" id="zip" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" required>
+                                <option value="">Select Country</option>
+                                <option value="US">South Africa</option>
+                                <option value="UK">Lesotho</option>
+                                <option value="CA">Swaziland</option>
+                                <option value="AU">Mozambique</option>
+                                
+                            </select>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="save-info">
+                            <label for="save-info">Save this information for next time</label>
+                        </div>
+                        <button type="submit" class="btn">Complete Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-security">
+        <div class="container">
+            <div class="security-badges">
+                <div class="badge">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SSL Encryption</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-credit-card"></i>
+                    <span>PCI Compliant</span>
+                </div>
+            </div>
+            <p>Your payment information is processed securely. We do not store your credit card details.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Fragrance Haven</h3>
+                <p>Your destination for premium perfumes and luxury fragrances from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> R617 Maguzwana Road</p>
+                <p><i class="fas fa-phone"></i> (063) 5265 123</p>
+                <p><i class="fas fa-envelope"></i> info@fragrancehaven.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Fragrance Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
